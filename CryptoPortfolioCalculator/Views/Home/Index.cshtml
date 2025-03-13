@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Crypto Portfolio Calculator</h1>
+    <p>Upload your portfolio file to calculate its value.</p>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Upload Portfolio File</h5>
+                </div>
+                <div id="upload-form-container" class="card-body">
+                    @if (TempData["Error"] != null)
+                    {
+                        <div id="errorMessage" class="alert alert-danger">@TempData["Error"]</div>
+                    }
+
+                    <form id="uploadForm">
+                        @Html.AntiForgeryToken()
+                        <div class="form-group mb-3">
+                            <label>Select portfolio file:</label>
+                            <input type="file" id="fileInput" class="form-control" required />
+                            <small class="text-muted">
+                                File format: X|COIN|Y (one entry per line)
+                                <br>
+                                Example: 10|ETH|123.14
+                            </small>
+                        </div>
+
+                        <button type="button" id="uploadBtn" class="btn btn-primary">Upload and Calculate</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/fileuploader.js"></script>

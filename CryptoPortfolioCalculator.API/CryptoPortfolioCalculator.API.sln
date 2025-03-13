@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoPortfolioCalculator.API", "CryptoPortfolioCalculator.API\CryptoPortfolioCalculator.API.csproj", "{DD8E2461-3C2B-4C6B-8A68-B8E6114FA7BE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoPortfolioCalculator.DataContracts", "..\CryptoPortfolioCalculator.DataContracts\CryptoPortfolioCalculator.DataContracts.csproj", "{7C563560-A3E0-4517-BAED-6B921CC83BE3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoPortfolioCalculator.Application", "CryptoPortfolioCalculator.Application\CryptoPortfolioCalculator.Application.csproj", "{F2149B5A-CB22-486F-B7BC-AC933F312E11}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoPortfolioCalculator.Domain", "CryptoPortfolioCalculator.Domain\CryptoPortfolioCalculator.Domain.csproj", "{97D9C820-CE26-447A-893A-042AD9DB7DBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoPortfolioCalculator.Tests", "CryptoPortfolioCalculator.Tests\CryptoPortfolioCalculator.Tests.csproj", "{D27AF254-8322-457A-9613-5D4C4CCDAFCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD8E2461-3C2B-4C6B-8A68-B8E6114FA7BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD8E2461-3C2B-4C6B-8A68-B8E6114FA7BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD8E2461-3C2B-4C6B-8A68-B8E6114FA7BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD8E2461-3C2B-4C6B-8A68-B8E6114FA7BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C563560-A3E0-4517-BAED-6B921CC83BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C563560-A3E0-4517-BAED-6B921CC83BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C563560-A3E0-4517-BAED-6B921CC83BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C563560-A3E0-4517-BAED-6B921CC83BE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2149B5A-CB22-486F-B7BC-AC933F312E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2149B5A-CB22-486F-B7BC-AC933F312E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2149B5A-CB22-486F-B7BC-AC933F312E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2149B5A-CB22-486F-B7BC-AC933F312E11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97D9C820-CE26-447A-893A-042AD9DB7DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97D9C820-CE26-447A-893A-042AD9DB7DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97D9C820-CE26-447A-893A-042AD9DB7DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97D9C820-CE26-447A-893A-042AD9DB7DBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D27AF254-8322-457A-9613-5D4C4CCDAFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D27AF254-8322-457A-9613-5D4C4CCDAFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D27AF254-8322-457A-9613-5D4C4CCDAFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D27AF254-8322-457A-9613-5D4C4CCDAFCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97F5AE69-40C2-48AE-95B7-6626D6D8350E}
+	EndGlobalSection
+EndGlobal

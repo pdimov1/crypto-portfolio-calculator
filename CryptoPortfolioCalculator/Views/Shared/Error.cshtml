@@ -1,0 +1,7 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+<h2>An unexpected error occurred</h2>
+<p>@(TempData["ErrorMessage"] ?? "We apologize for the inconvenience. Please try again later.")</p>

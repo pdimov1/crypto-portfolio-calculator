@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoPortfolioCalculator", "CryptoPortfolioCalculator\CryptoPortfolioCalculator.csproj", "{F03971E5-3E58-4CBC-949F-14D3AD0CBDA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoPortfolioCalculator.Clients", "CryptoPortfolioCalculator.Clients\CryptoPortfolioCalculator.Clients.csproj", "{B607F5C3-6877-417A-A96B-24708B95B70C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoPortfolioCalculator.DataContracts", "CryptoPortfolioCalculator.DataContracts\CryptoPortfolioCalculator.DataContracts.csproj", "{F55C6C01-4604-49ED-B512-5564811080BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F03971E5-3E58-4CBC-949F-14D3AD0CBDA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F03971E5-3E58-4CBC-949F-14D3AD0CBDA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F03971E5-3E58-4CBC-949F-14D3AD0CBDA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F03971E5-3E58-4CBC-949F-14D3AD0CBDA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B607F5C3-6877-417A-A96B-24708B95B70C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B607F5C3-6877-417A-A96B-24708B95B70C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B607F5C3-6877-417A-A96B-24708B95B70C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B607F5C3-6877-417A-A96B-24708B95B70C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F55C6C01-4604-49ED-B512-5564811080BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F55C6C01-4604-49ED-B512-5564811080BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F55C6C01-4604-49ED-B512-5564811080BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F55C6C01-4604-49ED-B512-5564811080BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF36755B-6621-4101-BFC5-78EC60E89357}
+	EndGlobalSection
+EndGlobal

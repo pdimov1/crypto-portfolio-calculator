@@ -1,0 +1,94 @@
+﻿@using Newtonsoft.Json
+@model PortfolioViewModel
+
+<div id="portfolioContainer">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5>Portfolio Summary</h5>
+                </div>
+                <div>
+                    <span id="refresh-status" class="text-muted ms-2"></span>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <h6>Initial Value</h6>
+                                <h3 id="initialValue">$@Model.Portfolio.InitialValue.ToString("N2")</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <h6>Current Value</h6>
+                                <h3 id="currentValue">$@Model.Portfolio.CurrentValue.ToString("N2")</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <h6>Overall Change</h6>
+                        <h3 id="overallChange" class="@(Model.Portfolio.OverallChangePercentage >= 0 ? "text-success" : "text-danger")">
+                            @(Model.Portfolio.OverallChangePercentage >= 0 ? "+" : "")@Model.Portfolio.OverallChangePercentage.ToString("N2")%
+                        </h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-info mb-4">
+            <div class="d-flex align-items-center">
+                <i class="fas fa-info-circle me-2"></i>
+                <div>
+                    Your portfolio will automatically refresh every 5 minutes to show the latest crypto prices.
+                    You can also click the Refresh button to update manually.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            <h5>Portfolio Details</h5>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Coin</th>
+                            <th>Quantity</th>
+                            <th>Initial Price</th>
+                            <th>Current Price</th>
+                            <th>Initial Value</th>
+                            <th>Current Value</th>
+                            <th>Change %</th>
+                        </tr>
+                    </thead>
+                    <tbody id="portfolioItems">
+                        @foreach (var item in Model.Portfolio.Items)
+                        {
+                            <tr data-symbol="@item.Symbol">
+                                <td>@item.Symbol</td>
+                                <td>@item.Quantity.ToString("N4")</td>
+                                <td>$@item.InitialPrice.ToString("N2")</td>
+                                <td class="current-price">$@item.CurrentPrice.ToString("N2")</td>
+                                <td>$@item.InitialValue.ToString("N2")</td>
+                                <td class="current-value">$@item.CurrentValue.ToString("N2")</td>
+                                <td class="change-percentage @(item.ChangePercentage >= 0 ? "text-success" : "text-danger")">
+                                    @(item.ChangePercentage >= 0 ? "+" : "")@item.ChangePercentage.ToString("N2")%
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio-data" style="display:none;">@Html.Raw(JsonConvert.SerializeObject(Model.Portfolio.Items))</div>
+<div id="__RequestVerificationToken">@Html.AntiForgeryToken()</div>
+
+<script src="~/js/portfolio.js"></script>
