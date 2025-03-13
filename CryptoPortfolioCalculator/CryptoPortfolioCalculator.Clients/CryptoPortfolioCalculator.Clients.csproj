@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CryptoPortfolioCalculator.DataContracts\CryptoPortfolioCalculator.DataContracts.csproj" />
+    <ProjectReference Include="..\..\CryptoPortfolioCalculator.DataContracts\CryptoPortfolioCalculator.DataContracts.csproj" />
   </ItemGroup>
 
 </Project>

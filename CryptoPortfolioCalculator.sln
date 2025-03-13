@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoPortfolioCalculator", "CryptoPortfolioCalculator\CryptoPortfolioCalculator.csproj", "{F03971E5-3E58-4CBC-949F-14D3AD0CBDA3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoPortfolioCalculator.Clients", "CryptoPortfolioCalculator.Clients\CryptoPortfolioCalculator.Clients.csproj", "{B607F5C3-6877-417A-A96B-24708B95B70C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoPortfolioCalculator.DataContracts", "CryptoPortfolioCalculator.DataContracts\CryptoPortfolioCalculator.DataContracts.csproj", "{F55C6C01-4604-49ED-B512-5564811080BE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoPortfolioCalculator", "CryptoPortfolioCalculator\CryptoPortfolioCalculator\CryptoPortfolioCalculator.csproj", "{BE390AE2-499F-4479-91DB-C351260A943C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoPortfolioCalculator.Clients", "CryptoPortfolioCalculator\CryptoPortfolioCalculator.Clients\CryptoPortfolioCalculator.Clients.csproj", "{76A0F7F9-D40F-46AF-AA91-AA9420D4EEE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F03971E5-3E58-4CBC-949F-14D3AD0CBDA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F03971E5-3E58-4CBC-949F-14D3AD0CBDA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F03971E5-3E58-4CBC-949F-14D3AD0CBDA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F03971E5-3E58-4CBC-949F-14D3AD0CBDA3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B607F5C3-6877-417A-A96B-24708B95B70C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B607F5C3-6877-417A-A96B-24708B95B70C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B607F5C3-6877-417A-A96B-24708B95B70C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B607F5C3-6877-417A-A96B-24708B95B70C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F55C6C01-4604-49ED-B512-5564811080BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F55C6C01-4604-49ED-B512-5564811080BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F55C6C01-4604-49ED-B512-5564811080BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F55C6C01-4604-49ED-B512-5564811080BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE390AE2-499F-4479-91DB-C351260A943C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE390AE2-499F-4479-91DB-C351260A943C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE390AE2-499F-4479-91DB-C351260A943C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE390AE2-499F-4479-91DB-C351260A943C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76A0F7F9-D40F-46AF-AA91-AA9420D4EEE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A0F7F9-D40F-46AF-AA91-AA9420D4EEE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A0F7F9-D40F-46AF-AA91-AA9420D4EEE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A0F7F9-D40F-46AF-AA91-AA9420D4EEE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
